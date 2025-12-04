@@ -1,0 +1,13 @@
+name: Library CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  call-central-workflow:
+    uses: V1incentC/test-premium-manifest/.github/workflows/reusable-ci.yml@main
+    with:
+      test-path: "tests"

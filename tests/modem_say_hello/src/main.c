@@ -4,7 +4,7 @@
 // A test case to verify addition
 ZTEST(modem_suite, test_calc_add)
 {
-    int result = modem_calc_add(5, 5);
+    int result = modem_calc_add(5, 4);
     zassert_equal(result, 10, "5 + 5 should equal 10, but got %d", result);
 }
 
